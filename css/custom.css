@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow: auto;
+    height: auto;
+}
+
+.navbar-nav .nav-link:hover{
+    color: #3D8FEF;
+}
+
+.navbar-toggler{
+    outline: none !important;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #3D8FEF;
+}
+
+.loginBtnbg {
+    background: linear-gradient(180deg, #ACD7FF -55.21%, #2489D3 100%);
+    padding: 10px 24px;
+    border: none;
+    font-size: 16px;
+
+}
+
+.loginBtnbg:hover {
+    background: linear-gradient(180deg, #92CFFF -55.21%, #1A75B8 100%);
+}
+
+.modal-backdrop {
+    z-index: 0;
+}
+
+.form-control{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+.custom-input-group:focus-within .form-control,
+.custom-input-group:focus-within .input-group-text {
+    border-color: #86b7fe; 
+}
+
+.swiper {
+  width: 90%;
+  max-width: 1200px;
+  height: 420px; /* or any fixed height */
+  margin: auto;
+}
+
+
+.swiper-slide {
+  transition: transform 0.3s ease, height 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 380px; /* base height */
+}
+
+.swiper-slide img {
+  max-height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide-active {
+  height: 420px; /* taller */
+  z-index: 2;
+}
+
+.swiper-slide-active img {
+  transform: scale(1.1); /* subtle zoom */
+}
+
+.exploreButton:hover{
+    background-color: #007752 !important; 
+    color: white !important;
+}
+
+.bgcustom{
+    background-color: #F9FBFF;
+}
+
+.img_Instructor{
+    background-image: url('../assets/img/Group 22.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    height: 300px;
+    cursor: pointer;
+}
+
+.img_Instructor:hover{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0), rgba(255,255,255,0.5)), url('../assets/img/Group 22.png');
+}
+
+
+
+
+
+.img_Student{
+    background-image: url('../assets/img/Group 23.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    height: 300px;
+}
+
+.img_Student:hover{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0), rgba(255,255,255,0.5)),url('../assets/img/Group\ 23.png');
+}
+
+.text-purple{
+    color: #954BFF;
+}
+
+.bg-pattern{
+    background-image: url('../assets/img/Pattern.svg');
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+
+
+/* clickable swiper  */
+
+.speakers-container {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      height: 600px;
+      gap: 15px;
+      overflow-x: auto;
+      padding: 50px 20px;
+    }
+
+    .speaker {
+      flex: 1;
+      overflow: hidden;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      position: relative;
+      filter: grayscale(100%);
+    }
+
+    .speaker.active {
+      flex: 4;
+      filter: grayscale(0%);
+      background: linear-gradient(135deg, #f1f1f1, #dcdcff);
+      border-color: #954BFF;
+    }
+
+    .speaker img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.3s;
+    }
+
+    .speaker-info {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      padding: 10px;
+      display: none;
+    }
+
+    .speaker.active .speaker-info {
+      display: block;
+      /* width: max-content; */
+    }
+
+    .bg-new-custom{
+        background: rgb(183, 182, 182, 0.2);
+        color: white;
+    }
+
+    input.bg-new-custom:focus {
+  background-color: rgb(183, 182, 182, 0.2); /* or whatever your custom color is */
+  color: #fff; /* optional: to ensure text is still visible */
+}
+
+input.custom-placeholder-white::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+@media only screen and (min-width: 1024px) {
+  .bg-box-pattern {
+    background-image: url('../assets/img/Pattern2.png');
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
+.bluetext{
+  color: #2489D3 !important;
+  border: 2px solid #2489D3 !important;
+}
+
+.bluetext:hover{
+  background: linear-gradient(180deg, #ACD7FF -55.21%, #2489D3 100%);
+  color: white !important;
+}
+
+ul li:hover{
+  color: #1A75B8;
+}
+
+.bg-frame1{
+  background-image: url('../assets/img/Frame\ 1.png');
+  background-repeat: no-repeat;
+  height: 80vh;
+}
